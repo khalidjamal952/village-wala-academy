@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Admin Dashboard | Village Wala Academy</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <!-- Admin CSS -->
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+
+  <body>
+    <!-- ==========================================
+         ADMIN NAVBAR
+    =========================================== -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <!-- Logo -->
+
+        <a href="admin.html" class="logo"> Village Wala Academy </a>
+
+        <!-- Mobile Menu -->
+
+        <button class="menu-btn" id="menuBtn" type="button">☰</button>
+
+        <!-- Admin Navigation -->
+
+        <nav class="nav-menu" id="navMenu">
+          <a href="admin.html" class="active"> Dashboard </a>
+
+          <a href="#courses"> Courses </a>
+
+          <a href="#students"> Students </a>
+
+          <a href="#orders"> Orders </a>
+
+          <a href="#liveClasses"> Live Classes </a>
+
+          <button type="button" class="logout-btn" id="adminLogoutBtn">
+            Logout
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==========================================
+         ADMIN MAIN
+    =========================================== -->
+
+    <main class="admin-main">
+      <!-- ======================================
+             PAGE HEADER
+        ======================================= -->
+
+      <section class="admin-header-section">
+        <div class="container">
+          <div class="admin-page-header">
+            <div>
+              <span class="admin-label"> ADMIN PANEL </span>
+
+              <h1>Admin Dashboard</h1>
+
+              <p>Manage Village Wala Academy from one place.</p>
+            </div>
+
+            <div class="admin-welcome">
+              <span> Welcome, Admin </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================
+             STATISTICS
+        ======================================= -->
+
+      <section class="admin-stats-section">
+        <div class="container">
+          <div class="admin-stats-grid">
+            <!-- Students -->
+
+            <div class="admin-stat-card">
+              <div class="admin-stat-icon">👨‍🎓</div>
+
+              <div>
+                <span> Total Students </span>
+
+                <h2 id="totalStudents">0</h2>
+              </div>
+            </div>
+
+            <!-- Courses -->
+
+            <div class="admin-stat-card">
+              <div class="admin-stat-icon">📚</div>
+
+              <div>
+                <span> Total Courses </span>
+
+                <h2 id="totalCourses">0</h2>
+              </div>
+            </div>
+
+            <!-- Orders -->
+
+            <div class="admin-stat-card">
+              <div class="admin-stat-icon">🛒</div>
+
+              <div>
+                <span> Total Orders </span>
+
+                <h2 id="totalOrders">0</h2>
+              </div>
+            </div>
+
+            <!-- Revenue -->
+
+            <div class="admin-stat-card">
+              <div class="admin-stat-icon">💰</div>
+
+              <div>
+                <span> Total Revenue </span>
+
+                <h2 id="totalRevenue">₹0</h2>
+              </div>
+            </div>
+
+            <!-- TOTAL LIVE CLASSES -->
+
+            <div class="admin-stat-card">
+              <div class="admin-stat-icon">🎥</div>
+
+              <div class="admin-stat-content">
+                <span class="admin-stat-label"> LIVE CLASSES </span>
+
+                <h3 id="totalLiveClasses">0</h3>
+
+                <p>Total live classes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================
+             QUICK MANAGEMENT
+        ======================================= -->
+
+      <section class="admin-management-section">
+        <div class="container">
+          <div class="section-heading">
+            <span> MANAGEMENT </span>
+
+            <h2>Quick Management</h2>
+
+            <p>Manage important parts of your academy.</p>
+          </div>
+
+          <div class="admin-management-grid">
+            <!-- Courses -->
+
+            <a href="#courses" class="admin-management-card">
+              <div class="management-icon">📚</div>
+
+              <div>
+                <h3>Manage Courses</h3>
+
+                <p>Add, edit and manage academy courses.</p>
+              </div>
+
+              <span class="management-arrow"> → </span>
+            </a>
+
+            <!-- Students -->
+
+            <a href="#students" class="admin-management-card">
+              <div class="management-icon">👨‍🎓</div>
+
+              <div>
+                <h3>Manage Students</h3>
+
+                <p>View and manage registered students.</p>
+              </div>
+
+              <span class="management-arrow"> → </span>
+            </a>
+
+            <!-- Orders -->
+
+            <a href="#orders" class="admin-management-card">
+              <div class="management-icon">🛒</div>
+
+              <div>
+                <h3>Manage Orders</h3>
+
+                <p>View course orders and payments.</p>
+              </div>
+
+              <span class="management-arrow"> → </span>
+            </a>
+
+            <!-- Live Classes -->
+
+            <a href="#liveClasses" class="admin-management-card">
+              <div class="management-icon">🎥</div>
+
+              <div>
+                <h3>Live Classes</h3>
+
+                <p>Manage upcoming and live classes.</p>
+              </div>
+
+              <span class="management-arrow"> → </span>
+            </a>
+
+            <!-- Certificates -->
+
+            <a href="#certificates" class="admin-management-card">
+              <div class="management-icon">🎓</div>
+
+              <div>
+                <h3>Manage Certificates</h3>
+
+                <p>View and verify student certificates.</p>
+              </div>
+
+              <span class="management-arrow"> → </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+        <!-- Certificate Statistics -->
+
+<div class="certificate-admin-stats">
+
+  <div class="certificate-stat-card">
+    <div class="certificate-stat-icon">🎓</div>
+
+    <div>
+      <span>Total Certificates</span>
+      <strong id="adminTotalCertificates">0</strong>
+    </div>
+  </div>
+
+
+  <div class="certificate-stat-card">
+    <div class="certificate-stat-icon">✅</div>
+
+    <div>
+      <span>Verified Certificates</span>
+      <strong id="adminVerifiedCertificates">0</strong>
+    </div>
+  </div>
+
+
+  <div class="certificate-stat-card">
+    <div class="certificate-stat-icon">🏆</div>
+
+    <div>
+      <span>Completed Courses</span>
+      <strong id="adminCompletedCourses">0</strong>
+    </div>
+  </div>
+
+</div>
+      <!-- Certificate Management -->
+
+      <section class="admin-section" id="certificates">
+        <div class="admin-section-header">
+          <div>
+            <h2>Certificate Management</h2>
+
+            <p>View and manage certificates issued to students.</p>
+          </div>
+        </div>
+
+        <!-- Certificate Search -->
+
+        <div class="certificate-admin-search">
+          <input
+            type="text"
+            id="adminCertificateSearch"
+            placeholder="Search by Certificate ID, student name or course..."
+          />
+
+          <button type="button" id="adminCertificateSearchBtn">
+            🔎 Search
+          </button>
+        </div>
+
+        <!-- Certificate Grid -->
+
+        <div class="admin-certificate-grid" id="adminCertificateGrid">
+          <!-- Certificates will be loaded by JavaScript -->
+        </div>
+
+        <!-- Empty State -->
+
+        <div class="admin-certificate-empty" id="adminCertificateEmpty">
+          <div>🎓</div>
+
+          <h3>No Certificates Found</h3>
+
+          <p>Completed student certificates will appear here.</p>
+        </div>
+      </section>
+
+      <!-- ======================================
+             RECENT ORDERS
+        ======================================= -->
+
+      <!-- ======================================
+     ORDER MANAGEMENT
+======================================= -->
+
+      <section class="admin-orders-section" id="orders">
+        <div class="container">
+          <!-- Section Header -->
+
+          <div class="admin-section-header">
+            <div>
+              <span class="admin-label"> ORDER MANAGEMENT </span>
+
+              <h2>Manage Orders</h2>
+
+              <p>View and manage course orders placed by students.</p>
+            </div>
+          </div>
+
+          <!-- ==================================
+             ORDER TOOLBAR
+        =================================== -->
+
+          <div class="admin-order-toolbar">
+            <!-- Search -->
+
+            <div class="admin-order-search">
+              <label for="orderSearch"> Search Orders </label>
+
+              <input
+                type="text"
+                id="orderSearch"
+                placeholder="Search by order ID, name or email..."
+              />
+            </div>
+
+            <!-- Status Filter -->
+
+            <div class="admin-order-filter">
+              <label for="orderStatusFilter"> Filter Status </label>
+
+              <select id="orderStatusFilter">
+                <option value="all">All Orders</option>
+
+                <option value="Pending">Pending</option>
+
+                <option value="Paid">Paid</option>
+
+                <option value="Cancelled">Cancelled</option>
+              </select>
+            </div>
+
+            <!-- Order Count -->
+
+            <div class="admin-order-count">
+              <span id="adminOrderCount"> 0 Orders </span>
+            </div>
+          </div>
+
+          <!-- ==================================
+             ORDER TABLE
+        =================================== -->
+
+          <div class="admin-order-table-wrapper">
+            <table class="admin-table admin-order-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+
+                  <th>Order ID</th>
+
+                  <th>Student</th>
+
+                  <th>Course</th>
+
+                  <th>Amount</th>
+
+                  <th>Payment</th>
+
+                  <th>Date</th>
+
+                  <th>Status</th>
+
+                  <th>Action</th>
+                </tr>
+              </thead>
+
+              <tbody id="adminOrdersTableBody">
+                <!-- Orders will be loaded by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- ==================================
+             EMPTY STATE
+        =================================== -->
+
+          <div
+            class="admin-order-empty"
+            id="adminOrderEmpty"
+            style="display: none"
+          >
+            <div class="admin-empty-icon">🛒</div>
+
+            <h3>No Orders Found</h3>
+
+            <p>Course orders will appear here after students make purchases.</p>
+          </div>
+
+          <!-- ==================================
+             ORDER DETAILS MODAL
+        =================================== -->
+
+          <div
+            class="admin-order-modal"
+            id="orderDetailsModal"
+            style="display: none"
+          >
+            <div class="admin-order-modal-content">
+              <!-- Modal Header -->
+
+              <div class="admin-order-modal-header">
+                <div>
+                  <span class="admin-label"> ORDER DETAILS </span>
+
+                  <h3>Order Information</h3>
+                </div>
+
+                <button
+                  type="button"
+                  id="closeOrderModal"
+                  class="admin-modal-close"
+                >
+                  &times;
+                </button>
+              </div>
+
+              <!-- Order Details -->
+
+              <div class="admin-order-details" id="adminOrderDetails">
+                <!-- Details will be loaded by JavaScript -->
+              </div>
+
+              <!-- Modal Buttons -->
+
+              <div class="admin-order-modal-actions">
+                <button
+                  type="button"
+                  class="admin-cancel-btn"
+                  id="closeOrderModalBtn"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================
+             COURSE MANAGEMENT PLACEHOLDER
+        ======================================= -->
+
+      <section class="admin-placeholder-section" id="courses">
+        <div class="admin-section-header">
+          <div>
+            <span class="admin-label"> COURSE MANAGEMENT </span>
+
+            <h2>Manage Courses</h2>
+
+            <p>
+              Add, edit and manage courses available on Village Wala Academy.
+            </p>
+          </div>
+
+          <button type="button" class="admin-placeholder-btn" id="addCourseBtn">
+            + Add New Course
+          </button>
+        </div>
+
+        <!-- Course Form -->
+
+        <div
+          class="admin-course-form"
+          id="courseFormContainer"
+          style="display: none"
+        >
+          <h3 id="courseFormTitle">Add New Course</h3>
+
+          <form id="courseForm">
+            <input type="hidden" id="courseId" />
+
+            <div class="admin-form-grid">
+              <!-- Course Title -->
+
+              <div class="admin-form-group">
+                <label for="courseTitle"> Course Title </label>
+
+                <input
+                  type="text"
+                  id="courseTitle"
+                  placeholder="Enter course title"
+                  required
+                />
+              </div>
+
+              <!-- Category -->
+
+              <div class="admin-form-group">
+                <label for="courseCategory"> Category </label>
+
+                <select id="courseCategory" required>
+                  <option value="">Select Category</option>
+
+                  <option value="Web Development">Web Development</option>
+
+                  <option value="JavaScript">JavaScript</option>
+
+                  <option value="React JS">React JS</option>
+
+                  <option value="UI/UX Design">UI/UX Design</option>
+                </select>
+              </div>
+
+              <!-- Price -->
+
+              <div class="admin-form-group">
+                <label for="coursePrice"> Course Price </label>
+
+                <input
+                  type="number"
+                  id="coursePrice"
+                  placeholder="Enter price"
+                  min="0"
+                  required
+                />
+              </div>
+
+              <!-- Old Price -->
+
+              <div class="admin-form-group">
+                <label for="courseOldPrice"> Old Price </label>
+
+                <input
+                  type="number"
+                  id="courseOldPrice"
+                  placeholder="Enter old price"
+                  min="0"
+                />
+              </div>
+            </div>
+
+            <!-- Description -->
+
+            <div class="admin-form-group">
+              <label for="courseDescription"> Course Description </label>
+
+              <textarea
+                id="courseDescription"
+                rows="5"
+                placeholder="Enter course description"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="admin-form-actions">
+              <button
+                type="submit"
+                class="admin-placeholder-btn"
+                id="saveCourseBtn"
+              >
+                Save Course
+              </button>
+
+              <button
+                type="button"
+                class="admin-cancel-btn"
+                id="cancelCourseBtn"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Course List -->
+
+        <div class="admin-course-list">
+          <div class="admin-course-list-header">
+            <h3>All Courses</h3>
+
+            <span id="adminCourseCount"> 0 Courses </span>
+          </div>
+
+          <div class="admin-course-grid" id="adminCourseGrid">
+            <!-- Courses will be loaded by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================
+     LECTURE MANAGEMENT
+======================================= -->
+
+      <section
+        class="admin-placeholder-section"
+        id="lectureManagement"
+        style="display: none"
+      >
+        <div class="admin-section-header">
+          <div>
+            <span class="admin-label">LECTURE MANAGEMENT</span>
+
+            <h2>Manage Lectures</h2>
+
+            <p id="lectureCourseName">Manage lectures for selected course.</p>
+          </div>
+
+          <button
+            type="button"
+            class="admin-cancel-btn"
+            id="closeLectureManagement"
+          >
+            Close
+          </button>
+        </div>
+
+        <!-- Lecture Form -->
+
+        <div class="admin-course-form" id="lectureFormContainer">
+          <h3 id="lectureFormTitle">Add New Lecture</h3>
+
+          <form id="lectureForm">
+            <input type="hidden" id="lectureId" />
+            <input type="hidden" id="lectureCourseId" />
+
+            <div class="admin-form-grid">
+              <!-- Lecture Title -->
+
+              <div class="admin-form-group">
+                <label for="lectureTitle"> Lecture Title </label>
+
+                <input
+                  type="text"
+                  id="lectureTitle"
+                  placeholder="Enter lecture title"
+                  required
+                />
+              </div>
+
+              <!-- Duration -->
+
+              <div class="admin-form-group">
+                <label for="lectureDuration"> Duration </label>
+
+                <input
+                  type="text"
+                  id="lectureDuration"
+                  placeholder="e.g. 15:30"
+                  required
+                />
+              </div>
+
+              <!-- Video URL -->
+
+              <div class="admin-form-group admin-full-width">
+                <label for="lectureVideo"> Video URL / Path </label>
+
+                <input
+                  type="text"
+                  id="lectureVideo"
+                  placeholder="../assets/videos/lecture1.mp4"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="admin-form-actions">
+              <button
+                type="submit"
+                class="admin-primary-btn"
+                id="saveLectureBtn"
+              >
+                Add Lecture
+              </button>
+
+              <button
+                type="button"
+                class="admin-cancel-btn"
+                id="cancelLectureBtn"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Lecture List -->
+
+        <div class="admin-course-list">
+          <div class="admin-course-list-header">
+            <h3>All Lectures</h3>
+
+            <span id="adminLectureCount"> 0 Lectures </span>
+          </div>
+
+          <div class="admin-course-grid" id="adminLectureGrid">
+            <!-- Lectures will be loaded by JavaScript -->
+          </div>
+        </div>
+      </section>
+      <!-- ======================================
+             STUDENT MANAGEMENT PLACEHOLDER
+        ======================================= -->
+      <!-- ==========================================
+     STUDENT MANAGEMENT
+========================================== -->
+
+      <section class="admin-placeholder-section" id="students">
+        <!-- Section Header -->
+
+        <div class="admin-section-header">
+          <div>
+            <span class="admin-label"> STUDENT MANAGEMENT </span>
+
+            <h2>Manage Students</h2>
+
+            <p>View and manage students registered on Village Wala Academy.</p>
+          </div>
+        </div>
+
+        <!-- Student Search -->
+
+        <div class="admin-student-toolbar">
+          <div class="admin-student-search">
+            <label for="studentSearch"> Search Student </label>
+
+            <input
+              type="text"
+              id="studentSearch"
+              placeholder="Search by name or email..."
+            />
+          </div>
+
+          <div class="admin-student-count">
+            <span id="adminStudentCount"> 0 Students </span>
+          </div>
+        </div>
+
+        <!-- Student Table -->
+
+        <div class="admin-student-table-wrapper">
+          <table class="admin-table admin-student-table">
+            <thead>
+              <tr>
+                <th>#</th>
+
+                <th>Student</th>
+
+                <th>Email</th>
+
+                <th>Phone</th>
+
+                <th>Courses</th>
+
+                <th>Status</th>
+
+                <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody id="studentsTableBody">
+              <!-- Students will be loaded by JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Empty State -->
+
+        <div
+          class="admin-student-empty"
+          id="adminStudentEmpty"
+          style="display: none"
+        >
+          <div class="admin-empty-icon">👨‍🎓</div>
+
+          <h3>No Students Found</h3>
+
+          <p>Registered students will appear here.</p>
+        </div>
+
+        <!-- Student Details Modal -->
+
+        <div
+          class="admin-student-modal"
+          id="studentDetailsModal"
+          style="display: none"
+        >
+          <div class="admin-student-modal-content">
+            <div class="admin-student-modal-header">
+              <h3>Student Details</h3>
+
+              <button
+                type="button"
+                id="closeStudentModal"
+                class="admin-modal-close"
+              >
+                &times;
+              </button>
+            </div>
+
+            <div class="admin-student-details" id="studentDetails">
+              <!-- Student details will be loaded here -->
+            </div>
+
+            <div class="admin-student-modal-actions">
+              <button
+                type="button"
+                class="admin-cancel-btn"
+                id="closeStudentModalBtn"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================
+             LIVE CLASS MANAGEMENT PLACEHOLDER
+        ======================================= -->
+
+      <!-- LIVE CLASS MANAGEMENT -->
+      <!-- ================= LIVE CLASS MANAGEMENT ================= -->
+
+      <section class="admin-live-section" id="liveClasses">
+        <div class="container">
+          <!-- SECTION HEADER -->
+          <div class="admin-section-header">
+            <div>
+              <span class="admin-label">LIVE CLASS MANAGEMENT</span>
+
+              <h2>Manage Live Classes</h2>
+
+              <p>Create, update and manage live classes for students.</p>
+            </div>
+
+            <button
+              type="button"
+              class="admin-primary-btn"
+              id="addLiveClassBtn"
+            >
+              + Add Live Class
+            </button>
+          </div>
+
+          <!-- ================= LIVE CLASS FORM ================= -->
+
+          <div
+            class="admin-live-form-container"
+            id="liveClassFormContainer"
+            style="display: none"
+          >
+            <div class="admin-form-header">
+              <div>
+                <span class="admin-label">LIVE CLASS</span>
+
+                <h3 id="liveClassFormTitle">Add New Live Class</h3>
+              </div>
+            </div>
+
+            <form id="liveClassForm">
+              <input type="hidden" id="liveClassId" />
+
+              <div class="admin-form-grid">
+                <!-- CLASS TITLE -->
+                <div class="admin-form-group">
+                  <label for="liveClassTitle"> Class Title </label>
+
+                  <input
+                    type="text"
+                    id="liveClassTitle"
+                    placeholder="Enter live class title"
+                    required
+                  />
+                </div>
+
+                <!-- INSTRUCTOR -->
+                <div class="admin-form-group">
+                  <label for="liveClassInstructor"> Instructor </label>
+
+                  <input
+                    type="text"
+                    id="liveClassInstructor"
+                    placeholder="Enter instructor name"
+                    required
+                  />
+                </div>
+
+                <!-- DATE -->
+                <div class="admin-form-group">
+                  <label for="liveClassDate"> Date </label>
+
+                  <input type="date" id="liveClassDate" required />
+                </div>
+
+                <!-- TIME -->
+                <div class="admin-form-group">
+                  <label for="liveClassTime"> Time </label>
+
+                  <input type="time" id="liveClassTime" required />
+                </div>
+
+                <!-- DURATION -->
+                <div class="admin-form-group">
+                  <label for="liveClassDuration"> Duration </label>
+
+                  <select id="liveClassDuration" required>
+                    <option value="">Select Duration</option>
+
+                    <option value="30 Minutes">30 Minutes</option>
+
+                    <option value="60 Minutes">60 Minutes</option>
+
+                    <option value="90 Minutes">90 Minutes</option>
+
+                    <option value="120 Minutes">120 Minutes</option>
+                  </select>
+                </div>
+
+                <!-- STATUS -->
+                <div class="admin-form-group">
+                  <label for="liveClassStatus"> Status </label>
+
+                  <select id="liveClassStatus" required>
+                    <option value="upcoming">Upcoming</option>
+
+                    <option value="live">Live</option>
+
+                    <option value="past">Past</option>
+                  </select>
+                </div>
+
+                <!-- JOIN LINK -->
+                <div class="admin-form-group admin-full-width">
+                  <label for="liveClassJoinLink"> Join Link </label>
+
+                  <input
+                    type="url"
+                    id="liveClassJoinLink"
+                    placeholder="https://meet.google.com/..."
+                  />
+                </div>
+
+                <!-- DESCRIPTION -->
+                <div class="admin-form-group admin-full-width">
+                  <label for="liveClassDescription"> Description </label>
+
+                  <textarea
+                    id="liveClassDescription"
+                    rows="4"
+                    placeholder="Enter live class description"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- FORM BUTTONS -->
+
+              <div class="admin-form-actions">
+                <button
+                  type="submit"
+                  class="admin-primary-btn"
+                  id="saveLiveClassBtn"
+                >
+                  Save Live Class
+                </button>
+
+                <button
+                  type="button"
+                  class="admin-cancel-btn"
+                  id="cancelLiveClassBtn"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- ================= SEARCH / FILTER ================= -->
+
+          <div class="admin-live-toolbar">
+            <!-- SEARCH -->
+
+            <div class="admin-live-search">
+              <label for="liveClassSearch"> Search Live Classes </label>
+
+              <input
+                type="text"
+                id="liveClassSearch"
+                placeholder="Search by title or instructor..."
+              />
+            </div>
+
+            <!-- FILTER -->
+
+            <div class="admin-live-filter">
+              <label for="liveClassFilter"> Filter Status </label>
+
+              <select id="liveClassFilter">
+                <option value="all">All Classes</option>
+
+                <option value="upcoming">Upcoming</option>
+
+                <option value="live">Live</option>
+
+                <option value="past">Past</option>
+              </select>
+            </div>
+
+            <!-- COUNT -->
+
+            <div class="admin-live-count">
+              <span id="adminLiveClassCount"> 0 Classes </span>
+            </div>
+          </div>
+
+          <!-- ================= LIVE CLASS GRID ================= -->
+
+          <div class="admin-live-grid" id="adminLiveClassGrid"></div>
+
+          <!-- ================= EMPTY STATE ================= -->
+
+          <div
+            class="admin-live-empty"
+            id="adminLiveClassEmpty"
+            style="display: none"
+          >
+            <div class="admin-empty-icon">🎥</div>
+
+            <h3>No Live Classes Found</h3>
+
+            <p>Add your first live class to display it here.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= END LIVE CLASS MANAGEMENT ================= -->
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy;
+
+          <span id="currentYear"></span>
+
+          Village Wala Academy. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- ==========================================
+         JAVASCRIPT
+    =========================================== -->
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Register - Village Wala Academy</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/auth.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo"> Village Wala Academy </a>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+        <nav class="nav-menu" id="navMenu">
+          <a href="../index.html">Home</a>
+
+          <a href="courses.html">Courses</a>
+
+          <a href="live-classes.html">Live Classes</a>
+
+          <a href="cart.html" class="cart-link">
+            🛒 Cart
+            <span id="cartCount">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- =========================
+         REGISTER SECTION
+    ========================== -->
+
+    <main>
+      <section class="auth-section">
+        <div class="auth-container">
+          <div class="auth-card">
+            <div class="auth-header">
+              <h1>Create Account</h1>
+
+              <p>Join Village Wala Academy and start learning today.</p>
+            </div>
+
+            <!-- Register Form -->
+
+            <form id="registerForm" class="auth-form">
+              <!-- Full Name -->
+
+              <div class="form-group">
+                <label for="registerName"> Full Name </label>
+
+                <input
+                  type="text"
+                  id="registerName"
+                  name="name"
+                  placeholder="Enter your full name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <!-- Email -->
+
+              <div class="form-group">
+                <label for="registerEmail"> Email Address </label>
+
+                <input
+                  type="email"
+                  id="registerEmail"
+                  name="email"
+                  placeholder="Enter your email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <!-- Phone -->
+
+              <div class="form-group">
+                <label for="registerPhone"> Phone Number </label>
+
+                <input
+                  type="tel"
+                  id="registerPhone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+
+              <!-- Password -->
+
+              <div class="form-group">
+                <label for="registerPassword"> Password </label>
+
+                <input
+                  type="password"
+                  id="registerPassword"
+                  name="password"
+                  placeholder="Create a password"
+                  autocomplete="new-password"
+                  required
+                />
+              </div>
+
+              <!-- Confirm Password -->
+
+              <div class="form-group">
+                <label for="confirmPassword"> Confirm Password </label>
+
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  placeholder="Confirm your password"
+                  autocomplete="new-password"
+                  required
+                />
+              </div>
+
+              <!-- Terms -->
+
+              <div class="terms-group">
+                <input
+                  type="checkbox"
+                  id="registerTerms"
+                  name="terms"
+                  required
+                />
+
+                <label for="registerTerms">
+                  I agree to the
+                  <a href="#"> Terms & Conditions </a>
+                  and
+                  <a href="#"> Privacy Policy </a>
+                </label>
+              </div>
+
+              <!-- Button -->
+
+              <button type="submit" class="auth-btn">Create Account</button>
+            </form>
+
+            <!-- Login Link -->
+
+            <div class="auth-footer">
+              <p>
+                Already have an account?
+
+                <a href="login.html"> Login </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <!-- About -->
+    <div class="footer-about">
+
+      <a href="../index.html" class="footer-logo">
+        🎓 Village Wala Academy
+      </a>
+
+      <p>
+        Learn practical skills, build your knowledge
+        and grow your career with Village Wala Academy.
+      </p>
+
+      <div class="footer-social">
+
+        <a href="#" aria-label="Facebook">f</a>
+
+        <a href="#" aria-label="Instagram">◎</a>
+
+        <a href="#" aria-label="YouTube">▶</a>
+
+        <a href="#" aria-label="LinkedIn">in</a>
+
+      </div>
+
+    </div>
+
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+
+      <h3>Quick Links</h3>
+
+      <a href="../index.html">› Home</a>
+
+      <a href="courses.html">› Courses</a>
+
+      <a href="live-classes.html">› Live Classes</a>
+
+      <a href="verify-certificate.html">
+        › Verify Certificate
+      </a>
+
+    </div>
+
+
+    <!-- Student -->
+    <div class="footer-links">
+
+      <h3>Student</h3>
+
+      <a href="login.html">› Student Login</a>
+
+      <a href="register.html">› Create Account</a>
+
+      <a href="dashboard.html">› Dashboard</a>
+
+      <a href="my-courses.html">› My Courses</a>
+
+    </div>
+
+
+    <!-- Contact -->
+    <div class="footer-contact">
+
+      <h3>Contact Us</h3>
+
+      <p>
+        📧 support@villagewalaacademy.com
+      </p>
+
+      <p>
+        📍 India
+      </p>
+
+      <a href="admin-login.html">
+        ⚙️ Admin Login
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- Footer Bottom -->
+
+  <div class="footer-bottom">
+
+    <p>
+      &copy;
+      <span id="currentYear"></span>
+      Village Wala Academy. All Rights Reserved.
+    </p>
+
+    <div class="footer-bottom-links">
+
+      <a href="#">Privacy Policy</a>
+
+      <span>|</span>
+
+      <a href="#">Terms & Conditions</a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+    <!-- JavaScript -->
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+  </body>
+</html>

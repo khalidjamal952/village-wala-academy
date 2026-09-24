@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Village Wala Academy</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+                Village Wala Academy
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+
+                <a href="../index.html">Home</a>
+
+                <a href="courses.html">Courses</a>
+
+                <a href="live-classes.html">Live Classes</a>
+
+                <a href="cart.html" class="cart-link">
+                    🛒 Cart
+                    <span id="cartCount">0</span>
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Login Section -->
+
+    <main>
+
+        <section class="auth-section">
+
+            <div class="auth-container">
+
+                <div class="auth-card">
+
+                    <div class="auth-header">
+
+                        <h1>Login</h1>
+
+                        <p>
+                            Login to your Village Wala Academy account
+                        </p>
+
+                    </div>
+
+
+                    <form id="loginForm" class="auth-form">
+
+                        <div class="form-group">
+
+                            <label for="loginEmail">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="loginEmail"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="loginPassword">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                name="password"
+                                placeholder="Enter your password"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="auth-options">
+
+                            <div class="remember-me">
+
+                                <input
+                                    type="checkbox"
+                                    id="rememberMe"
+                                    name="rememberMe"
+                                >
+
+                                <label for="rememberMe">
+                                    Remember me
+                                </label>
+
+                            </div>
+
+                            <a
+                                href="forgot-password.html"
+                                class="forgot-password"
+                            >
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="auth-btn"
+                        >
+                            Login
+                        </button>
+
+                    </form>
+
+
+                    <div class="auth-footer">
+
+                        <p>
+                            Don't have an account?
+                            <a href="register.html">
+                                Create Account
+                            </a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                &copy;
+                <span id="currentYear"></span>
+                Village Wala Academy. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+
+</body>
+
+</html>

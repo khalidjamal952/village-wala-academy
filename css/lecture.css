@@ -1,0 +1,408 @@
+/* =========================================
+   LECTURE PAGE
+========================================= */
+
+.lecture-page {
+  padding: 50px 20px;
+  background: #f7f8fc;
+  min-height: 700px;
+}
+
+.lecture-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 350px;
+  gap: 30px;
+  align-items: start;
+}
+
+/* =========================================
+   MAIN LECTURE AREA
+========================================= */
+
+.lecture-main {
+  min-width: 0;
+}
+
+/* =========================================
+   VIDEO
+========================================= */
+
+.video-wrapper {
+  width: 100%;
+  background: #000;
+  border-radius: 14px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+/* =========================================
+   LECTURE INFO
+========================================= */
+
+.lecture-info {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 20px;
+  border: 1px solid #e5e5e5;
+}
+
+.lecture-category {
+  display: inline-block;
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.lecture-info h1 {
+  font-size: 30px;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.lecture-info p {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* =========================================
+   LECTURE META
+========================================= */
+
+.lecture-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #eeeeee;
+}
+
+.lecture-meta span {
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================================
+   LECTURE NAVIGATION
+========================================= */
+
+.lecture-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.lecture-nav-btn,
+.mark-complete-btn {
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.lecture-nav-btn {
+  background: #ffffff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.lecture-nav-btn:hover {
+  background: #f1f1f1;
+}
+
+.mark-complete-btn {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+.mark-complete-btn:hover {
+  background: #3730a3;
+}
+
+.mark-complete-btn.completed {
+  background: #16a34a;
+}
+
+/* =========================================
+   LECTURE ABOUT
+========================================= */
+
+.lecture-about {
+  background: #ffffff;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+}
+
+.lecture-about h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.lecture-about p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.lecture-sidebar {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  overflow: hidden;
+  position: sticky;
+  top: 90px;
+  max-height: calc(100vh - 110px);
+}
+
+/* =========================================
+   CURRICULUM HEADER
+========================================= */
+
+.curriculum-header {
+  padding: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.curriculum-header h2 {
+  font-size: 21px;
+  margin-bottom: 7px;
+}
+
+.curriculum-header p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* =========================================
+   SIDEBAR PROGRESS
+========================================= */
+
+.sidebar-progress {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.sidebar-progress .progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.sidebar-progress .progress-fill {
+  width: 0;
+  height: 100%;
+  background: #4f46e5;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+/* =========================================
+   LECTURE LIST
+========================================= */
+
+.lecture-list {
+  max-height: calc(100vh - 240px);
+  overflow-y: auto;
+}
+
+/* =========================================
+   LECTURE ITEM
+========================================= */
+
+.lecture-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 18px;
+  border-bottom: 1px solid #eeeeee;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.lecture-item:hover {
+  background: #f8f8ff;
+}
+
+.lecture-item.active {
+  background: #eef2ff;
+  border-left: 4px solid #4f46e5;
+}
+
+.lecture-item.completed {
+  background: #f0fdf4;
+}
+
+/* =========================================
+   LECTURE NUMBER
+========================================= */
+
+.lecture-item-number {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eeeeee;
+  color: #555;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.lecture-item.active .lecture-item-number {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+.lecture-item.completed .lecture-item-number {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+/* =========================================
+   LECTURE ITEM CONTENT
+========================================= */
+
+.lecture-item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.lecture-item-content h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.lecture-item-content p {
+  color: #777;
+  font-size: 12px;
+}
+
+/* =========================================
+   COMPLETED ICON
+========================================= */
+
+.lecture-completed-icon {
+  color: #16a34a;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+.lecture-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.lecture-list::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 10px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .lecture-container {
+    grid-template-columns: 1fr;
+  }
+
+  .lecture-sidebar {
+    position: static;
+    max-height: none;
+  }
+
+  .lecture-list {
+    max-height: 400px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .lecture-page {
+    padding: 25px 12px;
+  }
+
+  .lecture-info {
+    padding: 20px;
+  }
+
+  .lecture-info h1 {
+    font-size: 24px;
+  }
+
+  .lecture-meta {
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .lecture-navigation {
+    flex-wrap: wrap;
+  }
+
+  .lecture-nav-btn,
+  .mark-complete-btn {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .lecture-about {
+    padding: 20px;
+  }
+
+  .lecture-about h2 {
+    font-size: 20px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+  .lecture-navigation {
+    flex-direction: column;
+  }
+
+  .lecture-nav-btn,
+  .mark-complete-btn {
+    width: 100%;
+  }
+}

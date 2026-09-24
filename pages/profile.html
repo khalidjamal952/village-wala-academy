@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Profile - Village Wala Academy</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <!-- Profile CSS -->
+    <link rel="stylesheet" href="../css/profile.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo"> Village Wala Academy </a>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+        <nav class="nav-menu" id="navMenu">
+          <a href="../index.html"> Home </a>
+
+          <a href="courses.html"> Courses </a>
+
+          <a href="my-courses.html"> My Courses </a>
+
+          <a href="live-classes.html"> Live Classes </a>
+
+          <a href="cart.html" class="cart-link">
+            🛒 Cart
+            <span id="cartCount">0</span>
+          </a>
+
+          <a href="profile.html" class="active"> Profile </a>
+
+          <button type="button" class="logout-btn" id="logoutBtn">
+            Logout
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- =========================
+         PROFILE PAGE
+    ========================== -->
+
+    <main>
+      <section class="profile-section">
+        <div class="container">
+          <!-- Page Header -->
+
+          <div class="profile-page-header">
+            <p class="profile-label">Student Account</p>
+
+            <h1>My Profile</h1>
+
+            <p>Manage your personal information and learning account.</p>
+          </div>
+
+          <!-- =========================
+                     PROFILE LAYOUT
+                ========================== -->
+
+          <div class="profile-layout">
+            <!-- =========================
+                         PROFILE SIDEBAR
+                    ========================== -->
+
+            <aside class="profile-sidebar">
+              <div class="profile-avatar">
+                <span id="profileAvatar"> S </span>
+              </div>
+
+              <h2 id="profileDisplayName">Student</h2>
+
+              <p id="profileDisplayEmail">student@example.com</p>
+
+              <!-- Stats -->
+
+              <div class="profile-stats">
+                <div class="profile-stat">
+                  <strong id="profileCourseCount"> 0 </strong>
+
+                  <span> Courses </span>
+                </div>
+
+                <div class="profile-stat">
+                  <strong id="profileCompletedCount"> 0 </strong>
+
+                  <span> Completed </span>
+                </div>
+
+                <div class="profile-stat">
+                  <strong id="profileCertificateCount"> 0 </strong>
+
+                  <span> Certificates </span>
+                </div>
+              </div>
+
+              <a href="dashboard.html" class="profile-dashboard-btn">
+                Go to Dashboard
+              </a>
+            </aside>
+
+            <!-- =========================
+                         PROFILE FORM
+                    ========================== -->
+
+            <section class="profile-content">
+              <div class="profile-card">
+                <div class="profile-card-header">
+                  <div>
+                    <h2>Personal Information</h2>
+
+                    <p>Update your profile details.</p>
+                  </div>
+                </div>
+
+                <form id="profileForm" class="profile-form">
+                  <!-- Name -->
+
+                  <div class="profile-form-group">
+                    <label for="profileName"> Full Name </label>
+
+                    <input
+                      type="text"
+                      id="profileName"
+                      placeholder="Enter your full name"
+                      required
+                    />
+                  </div>
+
+                  <!-- Email -->
+
+                  <div class="profile-form-group">
+                    <label for="profileEmail"> Email Address </label>
+
+                    <input
+                      type="email"
+                      id="profileEmail"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+
+                  <!-- Phone -->
+
+                  <div class="profile-form-group">
+                    <label for="profilePhone"> Phone Number </label>
+
+                    <input
+                      type="tel"
+                      id="profilePhone"
+                      placeholder="Enter your phone number"
+                    />
+                  </div>
+
+                  <!-- City -->
+
+                  <div class="profile-form-group">
+                    <label for="profileCity"> City </label>
+
+                    <input
+                      type="text"
+                      id="profileCity"
+                      placeholder="Enter your city"
+                    />
+                  </div>
+
+                  <!-- Bio -->
+
+                  <div class="profile-form-group full-width">
+                    <label for="profileBio"> About Me </label>
+
+                    <textarea
+                      id="profileBio"
+                      rows="5"
+                      placeholder="Write something about yourself..."
+                    ></textarea>
+                  </div>
+
+                  <!-- Save -->
+
+                  <div class="profile-form-actions">
+                    <button type="submit" class="profile-save-btn">
+                      Save Changes
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <!-- =========================
+                             ACCOUNT INFORMATION
+                        ========================== -->
+
+              <div class="profile-card account-card">
+                <div class="profile-card-header">
+                  <div>
+                    <h2>Account</h2>
+
+                    <p>Manage your learning account.</p>
+                  </div>
+                </div>
+
+                <div class="account-actions">
+                  <a href="my-courses.html" class="account-action">
+                    📚
+                    <span> My Courses </span>
+                  </a>
+
+                  <a href="certificate.html" class="account-action">
+                    🏆
+                    <span> My Certificates </span>
+                  </a>
+
+                  <button
+                    type="button"
+                    class="account-action logout-action"
+                    id="profileLogoutBtn"
+                  >
+                    🚪
+                    <span> Logout </span>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+   <!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <!-- About -->
+    <div class="footer-about">
+
+      <a href="../index.html" class="footer-logo">
+        🎓 Village Wala Academy
+      </a>
+
+      <p>
+        Learn practical skills, build your knowledge
+        and grow your career with Village Wala Academy.
+      </p>
+
+      <div class="footer-social">
+
+        <a href="#" aria-label="Facebook">f</a>
+
+        <a href="#" aria-label="Instagram">◎</a>
+
+        <a href="#" aria-label="YouTube">▶</a>
+
+        <a href="#" aria-label="LinkedIn">in</a>
+
+      </div>
+
+    </div>
+
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+
+      <h3>Quick Links</h3>
+
+      <a href="../index.html">› Home</a>
+
+      <a href="courses.html">› Courses</a>
+
+      <a href="live-classes.html">› Live Classes</a>
+
+      <a href="verify-certificate.html">
+        › Verify Certificate
+      </a>
+
+    </div>
+
+
+    <!-- Student -->
+    <div class="footer-links">
+
+      <h3>Student</h3>
+
+      <a href="dashboard.html">› Dashboard</a>
+
+      <a href="my-courses.html">› My Courses</a>
+
+      <a href="profile.html">› Profile</a>
+
+      <a href="certificate.html">› Certificates</a>
+
+    </div>
+
+
+    <!-- Contact -->
+    <div class="footer-contact">
+
+      <h3>Contact Us</h3>
+
+      <p>
+        📧 support@villagewalaacademy.com
+      </p>
+
+      <p>
+        📍 India
+      </p>
+
+      <a href="admin-login.html">
+        ⚙️ Admin Login
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- Footer Bottom -->
+
+  <div class="footer-bottom">
+
+    <p>
+      &copy;
+      <span id="currentYear"></span>
+      Village Wala Academy. All Rights Reserved.
+    </p>
+
+    <div class="footer-bottom-links">
+
+      <a href="#">Privacy Policy</a>
+
+      <span>|</span>
+
+      <a href="#">Terms & Conditions</a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+    <!-- JavaScript -->
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/profile.js"></script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lecture - Village Wala Academy</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <link rel="stylesheet" href="../css/lecture.css" />
+  </head>
+
+  <body>
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo"> Village Wala Academy </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="../index.html"> Home </a>
+
+          <a href="courses.html"> Courses </a>
+
+          <a href="live-classes.html"> Live Classes </a>
+
+          <a href="dashboard.html"> Dashboard </a>
+
+          <a href="my-courses.html" class="active"> My Courses </a>
+
+          <a href="profile.html"> Profile </a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn">
+            🛒 Cart
+
+            <span id="cartCount"> 0 </span>
+          </a>
+
+          <button id="menuBtn" class="menu-btn">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================
+         LECTURE PAGE
+    ========================================== -->
+
+    <main class="lecture-page">
+      <div class="container lecture-container">
+        <!-- =====================================
+                 VIDEO SECTION
+            ====================================== -->
+
+        <section class="lecture-main">
+          <div class="video-wrapper">
+            <video
+              id="lectureVideo"
+              controls
+              controlsList="nodownload"
+              poster=""
+            >
+              <source
+                src="../assets/videos/demo-lecture.mp4"
+                type="video/mp4"
+              />
+
+              Your browser does not support the video element.
+            </video>
+          </div>
+
+          <!-- VIDEO INFORMATION -->
+
+          <div class="lecture-info">
+            <span class="lecture-category" id="lectureCategory"> Course </span>
+
+            <h1 id="lectureTitle">Lecture Title</h1>
+
+            <p id="lectureDescription">
+              Learn this topic step by step with Village Wala Academy.
+            </p>
+
+            <div class="lecture-meta">
+              <span id="lectureNumber"> Lecture 1 </span>
+
+              <span id="lectureDuration"> 10 Minutes </span>
+
+              <span id="lectureProgress"> Progress: 0% </span>
+            </div>
+          </div>
+
+          <!-- =================================
+                     LECTURE NAVIGATION
+                ================================== -->
+
+          <div class="lecture-navigation">
+            <button id="previousLecture" class="lecture-nav-btn">
+              ← Previous
+            </button>
+
+            <button id="markComplete" class="mark-complete-btn">
+              ✓ Mark as Complete
+            </button>
+
+            <button id="nextLecture" class="lecture-nav-btn">Next →</button>
+          </div>
+
+          <!-- =================================
+                     COURSE DESCRIPTION
+                ================================== -->
+
+          <div class="lecture-about">
+            <h2>About This Lecture</h2>
+
+            <p id="lectureAbout">
+              This lecture is part of the complete course curriculum. Watch the
+              lecture carefully and complete the lesson to track your progress.
+            </p>
+          </div>
+        </section>
+
+        <!-- =====================================
+                 COURSE CURRICULUM SIDEBAR
+            ====================================== -->
+
+        <aside class="lecture-sidebar">
+          <div class="curriculum-header">
+            <h2>Course Content</h2>
+
+            <p id="courseProgressText">0% Complete</p>
+          </div>
+
+          <!-- COURSE PROGRESS -->
+
+          <div class="sidebar-progress">
+            <div class="progress-bar">
+              <div class="progress-fill" id="courseProgressBar"></div>
+            </div>
+          </div>
+
+          <!-- LECTURE LIST -->
+
+          <div class="lecture-list" id="lectureList">
+            <!-- Lectures will be loaded
+                         by JavaScript -->
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-about">
+          <h3>Village Wala Academy</h3>
+
+          <p>
+            Learn practical skills and build your future with quality online
+            courses.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+
+          <a href="../index.html"> Home </a>
+
+          <a href="courses.html"> Courses </a>
+
+          <a href="dashboard.html"> Dashboard </a>
+
+          <a href="my-courses.html"> My Courses </a>
+        </div>
+
+        <div class="footer-links">
+          <h4>Student</h4>
+
+          <a href="profile.html"> Profile </a>
+
+          <a href="certificate.html"> Certificates </a>
+
+          <a href="live-classes.html"> Live Classes </a>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+
+          <p>📧 support@villagewalaacademy.com</p>
+
+          <p>📍 India</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          ©
+          <span id="currentYear"></span>
+          Village Wala Academy. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/lecture.js"></script>
+  </body>
+</html>

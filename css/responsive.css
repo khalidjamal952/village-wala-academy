@@ -1,0 +1,379 @@
+/* =========================================
+   TABLET
+   Screen width: 900px or less
+========================================= */
+
+@media (max-width: 900px) {
+
+    /* ================= NAVBAR ================= */
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 75px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px;
+
+        background: #ffffff;
+
+        border-bottom: 1px solid #eeeeee;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        width: 100%;
+
+        padding: 8px 0;
+    }
+
+    .nav-actions {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 60px;
+    }
+
+    .hero-content > p {
+        margin: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
+    }
+
+
+    /* ================= HERO CARD ================= */
+
+    .hero-visual {
+        margin-top: 20px;
+    }
+
+
+    /* ================= CATEGORIES ================= */
+
+    .categories {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* ================= COURSES ================= */
+
+    .course-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* ================= LIVE SECTION ================= */
+
+    .live-container {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    /* ================= FEATURES ================= */
+
+    .features {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 40px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   Screen width: 600px or less
+========================================= */
+
+@media (max-width: 600px) {
+
+
+    /* ================= GLOBAL ================= */
+
+    .container {
+        width: 90%;
+    }
+
+
+    /* ================= NAVBAR ================= */
+
+    .nav-container {
+        height: 68px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        top: 68px;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-container {
+        gap: 45px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+
+        letter-spacing: -1px;
+    }
+
+    .hero-content > p {
+        font-size: 14px;
+    }
+
+
+    /* ================= HERO BUTTONS ================= */
+
+    .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* ================= HERO STATS ================= */
+
+    .hero-stats {
+        gap: 20px;
+
+        justify-content: space-between;
+    }
+
+    .hero-stats strong {
+        font-size: 19px;
+    }
+
+    .hero-stats span {
+        font-size: 11px;
+    }
+
+
+    /* ================= HERO CARD ================= */
+
+    .learning-card {
+        width: 100%;
+
+        max-width: 320px;
+
+        transform: rotate(0);
+    }
+
+    .learning-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .video-placeholder {
+        height: 170px;
+    }
+
+
+    /* ================= SECTION ================= */
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .section-title {
+        margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+    .section-title p {
+        font-size: 13px;
+    }
+
+
+    /* ================= CATEGORIES ================= */
+
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
+    .category {
+        padding: 20px;
+    }
+
+
+    /* ================= COURSES ================= */
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-image {
+        height: 190px;
+    }
+
+
+    /* ================= LIVE ================= */
+
+    .live-section {
+        padding: 65px 0;
+    }
+
+    .live-container h2 {
+        font-size: 30px;
+    }
+
+    .live-container > div > p {
+        font-size: 13px;
+    }
+
+    .live-screen {
+        height: 190px;
+    }
+
+    .live-screen h3 {
+        font-size: 20px;
+    }
+
+
+    /* ================= FEATURES ================= */
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ================= CTA ================= */
+
+    .cta {
+        padding: 65px 0;
+    }
+
+    .cta h2 {
+        font-size: 30px;
+    }
+
+    .cta p {
+        font-size: 13px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+        padding-top: 55px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .copyright {
+        padding: 18px 10px;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+   Screen width: 400px or less
+========================================= */
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-stats {
+        gap: 12px;
+    }
+
+    .hero-stats strong {
+        font-size: 17px;
+    }
+
+    .hero-stats span {
+        font-size: 10px;
+    }
+
+    .learning-card {
+        padding: 18px;
+    }
+
+    .video-placeholder {
+        height: 150px;
+    }
+
+    .course-body {
+        padding: 18px;
+    }
+
+    .course-footer {
+        gap: 10px;
+    }
+
+    .add-cart {
+        padding: 8px 10px;
+    }
+
+}

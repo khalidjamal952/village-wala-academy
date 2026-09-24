@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Student Dashboard - Village Wala Academy</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo"> Village Wala Academy </a>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+        <nav class="nav-menu" id="navMenu">
+          <a href="../index.html"> Home </a>
+
+          <a href="courses.html"> Courses </a>
+
+          <a href="my-courses.html"> My Courses </a>
+
+          <a href="live-classes.html"> Live Classes </a>
+
+          <a href="cart.html" class="cart-link">
+            🛒 Cart
+            <span id="cartCount">0</span>
+          </a>
+
+          <a href="profile.html"> Profile </a>
+
+          <button type="button" class="logout-btn" id="logoutBtn">
+            Logout
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- =========================
+         DASHBOARD
+    ========================== -->
+
+    <main>
+      <section class="dashboard-section">
+        <div class="container">
+          <!-- Welcome -->
+
+          <div class="dashboard-header">
+            <div>
+              <p class="dashboard-label">Student Dashboard</p>
+
+              <h1>
+                Welcome,
+                <span id="studentName"> Student </span>
+                👋
+              </h1>
+
+              <p>Continue your learning journey with Village Wala Academy.</p>
+            </div>
+
+            <a href="profile.html" class="dashboard-profile-btn">
+              View Profile
+            </a>
+          </div>
+
+          <!-- =========================
+                     STATS
+                ========================== -->
+
+          <div class="dashboard-stats">
+            <div class="dashboard-stat-card">
+              <div class="stat-icon">📚</div>
+
+              <div>
+                <h3 id="totalCourses">0</h3>
+
+                <p>My Courses</p>
+              </div>
+            </div>
+
+            <div class="dashboard-stat-card">
+              <div class="stat-icon">📈</div>
+
+              <div>
+                <h3 id="progressCourses">0</h3>
+
+                <p>In Progress</p>
+              </div>
+            </div>
+
+            <div class="dashboard-stat-card">
+              <div class="stat-icon">✅</div>
+
+              <div>
+                <h3 id="completedCourses">0</h3>
+
+                <p>Completed</p>
+              </div>
+            </div>
+
+            <div class="dashboard-stat-card">
+              <div class="stat-icon">🏆</div>
+
+              <div>
+                <h3 id="certificateCount">0</h3>
+
+                <p>Certificates</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- =========================
+                     CONTINUE LEARNING
+                ========================== -->
+
+          <section class="dashboard-block">
+            <div class="section-heading">
+              <div>
+                <h2>Continue Learning</h2>
+
+                <p>Pick up where you left off.</p>
+              </div>
+
+              <a href="my-courses.html"> View All </a>
+            </div>
+
+            <div class="continue-learning-grid">
+              <article class="learning-card">
+                <div class="learning-icon">HTML</div>
+
+                <div class="learning-content">
+                  <span> Web Development </span>
+
+                  <h3>HTML & CSS Complete Course</h3>
+
+                  <p>Continue learning HTML, CSS and responsive web design.</p>
+
+                  <a href="lecture.html?id=course1" class="dashboard-btn">
+                    Continue Learning
+                  </a>
+                </div>
+              </article>
+
+              <article class="learning-card">
+                <div class="learning-icon">JS</div>
+
+                <div class="learning-content">
+                  <span> JavaScript </span>
+
+                  <h3>JavaScript Complete Course</h3>
+
+                  <p>
+                    Continue learning JavaScript and interactive web
+                    development.
+                  </p>
+
+                  <a href="lecture.html?id=course2" class="dashboard-btn">
+                    Continue Learning
+                  </a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- =========================
+                     UPCOMING LIVE CLASS
+                ========================== -->
+
+          <section class="dashboard-block">
+            <div class="section-heading">
+              <div>
+                <h2>Upcoming Live Class</h2>
+
+                <p>Don't miss your next live session.</p>
+              </div>
+
+              <a href="live-classes.html"> View All </a>
+            </div>
+
+            <div class="live-dashboard-card">
+              <div class="live-date">
+                <span> SEP </span>
+
+                <strong> 24 </strong>
+              </div>
+
+              <div class="live-info">
+                <span class="live-badge"> UPCOMING </span>
+
+                <h3>React JS Components</h3>
+
+                <p>
+                  Understand React components and build reusable UI elements.
+                </p>
+
+                <div class="live-meta">
+                  <span> 🕐 7:00 PM </span>
+
+                  <span> ⏱ 60 Minutes </span>
+                </div>
+              </div>
+
+              <a href="live-classes.html" class="dashboard-btn"> View Class </a>
+            </div>
+          </section>
+
+          <!-- =========================
+                     CERTIFICATE
+                ========================== -->
+
+          <section class="dashboard-block">
+            <div class="section-heading">
+              <div>
+                <h2>Certificates</h2>
+
+                <p>View your completed course certificates.</p>
+              </div>
+
+              <a href="certificate.html"> View Certificates </a>
+            </div>
+
+            <div class="certificate-dashboard-card">
+              <div class="certificate-icon">🏆</div>
+
+              <div>
+                <h3>Course Certificates</h3>
+
+                <p>Complete your courses to unlock certificates.</p>
+              </div>
+
+              <a href="certificate.html" class="dashboard-btn">
+                View Certificates
+              </a>
+            </div>
+          </section>
+
+          <!-- =========================
+                     RECENT ORDERS
+                ========================== -->
+
+          <section class="dashboard-block">
+            <div class="section-heading">
+              <div>
+                <h2>Recent Orders</h2>
+
+                <p>Your latest course purchases.</p>
+              </div>
+            </div>
+
+            <div class="orders-table-wrapper">
+              <table class="orders-table">
+                <thead>
+                  <tr>
+                    <th>Order ID</th>
+
+                    <th>Date</th>
+
+                    <th>Courses</th>
+
+                    <th>Amount</th>
+
+                    <th>Status</th>
+                  </tr>
+                </thead>
+
+                <tbody id="ordersTableBody">
+                  <tr>
+                    <td colspan="5">No orders found.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <!-- About -->
+    <div class="footer-about">
+
+      <a href="../index.html" class="footer-logo">
+        🎓 Village Wala Academy
+      </a>
+
+      <p>
+        Learn practical skills, build your knowledge
+        and grow your career with Village Wala Academy.
+      </p>
+
+      <div class="footer-social">
+
+        <a href="#" aria-label="Facebook">f</a>
+
+        <a href="#" aria-label="Instagram">◎</a>
+
+        <a href="#" aria-label="YouTube">▶</a>
+
+        <a href="#" aria-label="LinkedIn">in</a>
+
+      </div>
+
+    </div>
+
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+
+      <h3>Quick Links</h3>
+
+      <a href="../index.html">› Home</a>
+
+      <a href="courses.html">› Courses</a>
+
+      <a href="live-classes.html">› Live Classes</a>
+
+      <a href="verify-certificate.html">
+        › Verify Certificate
+      </a>
+
+    </div>
+
+
+    <!-- Student -->
+    <div class="footer-links">
+
+      <h3>Student</h3>
+
+      <a href="dashboard.html">› Dashboard</a>
+
+      <a href="my-courses.html">› My Courses</a>
+
+      <a href="profile.html">› Profile</a>
+
+      <a href="certificate.html">› Certificates</a>
+
+    </div>
+
+
+    <!-- Contact -->
+    <div class="footer-contact">
+
+      <h3>Contact Us</h3>
+
+      <p>
+        📧 support@villagewalaacademy.com
+      </p>
+
+      <p>
+        📍 India
+      </p>
+
+      <a href="admin-login.html">
+        ⚙️ Admin Login
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- Footer Bottom -->
+
+  <div class="footer-bottom">
+
+    <p>
+      &copy;
+      <span id="currentYear"></span>
+      Village Wala Academy. All Rights Reserved.
+    </p>
+
+    <div class="footer-bottom-links">
+
+      <a href="#">Privacy Policy</a>
+
+      <span>|</span>
+
+      <a href="#">Terms & Conditions</a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+    <!-- JavaScript -->
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/dashboard.js"></script>
+  </body>
+</html>

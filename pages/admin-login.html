@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Admin Login | Village Wala Academy</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <!-- Authentication CSS -->
+    <link rel="stylesheet" href="../css/auth.css" />
+
+    <!-- Admin CSS -->
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+
+  <body>
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <!-- Logo -->
+
+        <a href="../index.html" class="logo"> Village Wala Academy </a>
+
+        <!-- Mobile Menu Button -->
+
+        <button class="menu-btn" id="menuBtn" type="button">☰</button>
+
+        <!-- Navigation -->
+
+        <nav class="nav-menu" id="navMenu">
+          <a href="../index.html"> Home </a>
+
+          <a href="courses.html"> Courses </a>
+
+          <a href="live-classes.html"> Live Classes </a>
+
+          <a href="login.html"> Student Login </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==========================================
+         ADMIN LOGIN SECTION
+    =========================================== -->
+
+    <main>
+      <section class="auth-section admin-login-section">
+        <div class="auth-container">
+          <div class="auth-card admin-login-card">
+            <!-- Admin Header -->
+
+            <div class="auth-header">
+              <div class="admin-icon">⚙️</div>
+
+              <h1>Admin Login</h1>
+
+              <p>Login to manage Village Wala Academy</p>
+            </div>
+
+            <!-- Admin Login Form -->
+
+            <form id="adminLoginForm" class="auth-form">
+              <!-- Email -->
+
+              <div class="form-group">
+                <label for="adminEmail"> Admin Email </label>
+
+                <input
+                  type="email"
+                  id="adminEmail"
+                  name="adminEmail"
+                  placeholder="Enter admin email"
+                  required
+                />
+              </div>
+
+              <!-- Password -->
+
+              <div class="form-group">
+                <label for="adminPassword"> Password </label>
+
+                <input
+                  type="password"
+                  id="adminPassword"
+                  name="adminPassword"
+                  placeholder="Enter admin password"
+                  required
+                />
+              </div>
+
+              <!-- Remember Admin -->
+
+              <div class="checkbox-group">
+                <label>
+                  <input type="checkbox" id="adminRemember" />
+
+                  Remember me
+                </label>
+              </div>
+
+              <!-- Login Button -->
+
+              <button type="submit" class="auth-btn admin-login-btn">
+                Login to Admin Panel
+              </button>
+            </form>
+
+            <p class="auth-switch">
+              Don't have an admin account?
+              <a href="admin-setup.html"> Create Admin Account </a>
+            </p>
+
+            <!-- Admin Footer -->
+
+            <div class="auth-footer">
+              <p>
+                Student?
+                <a href="login.html"> Login here </a>
+              </p>
+
+              <p>
+                <a href="../index.html"> ← Back to Home </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+   <!-- ==========================================
+     FOOTER
+=========================================== -->
+
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <!-- About -->
+    <div class="footer-about">
+
+      <a href="../index.html" class="footer-logo">
+        Village Wala Academy
+      </a>
+
+      <p>
+        Learn practical skills, build your knowledge
+        and grow your career with Village Wala Academy.
+      </p>
+
+      <div class="footer-social">
+
+        <a href="#" aria-label="Facebook">
+          f
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          ◎
+        </a>
+
+        <a href="#" aria-label="YouTube">
+          ▶
+        </a>
+
+        <a href="#" aria-label="LinkedIn">
+          in
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+
+      <h3>Quick Links</h3>
+
+      <a href="../index.html">Home</a>
+
+      <a href="courses.html">Courses</a>
+
+      <a href="live-classes.html">Live Classes</a>
+
+      <a href="verify-certificate.html">
+        Verify Certificate
+      </a>
+
+    </div>
+
+
+    <!-- Student -->
+    <div class="footer-links">
+
+      <h3>Student</h3>
+
+      <a href="login.html">Student Login</a>
+
+      <a href="register.html">Create Account</a>
+
+      <a href="dashboard.html">Dashboard</a>
+
+      <a href="my-courses.html">My Courses</a>
+
+    </div>
+
+
+    <!-- Contact -->
+    <div class="footer-contact">
+
+      <h3>Contact Us</h3>
+
+      <p>
+        📧 support@villagewalaacademy.com
+      </p>
+
+      <p>
+        📍 India
+      </p>
+
+      <a href="admin-login.html">
+        Admin Login
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- Footer Bottom -->
+
+  <div class="footer-bottom">
+
+    <p>
+      &copy;
+      <span id="currentYear"></span>
+      Village Wala Academy.
+      All rights reserved.
+    </p>
+
+    <div class="footer-bottom-links">
+
+      <a href="#">Privacy Policy</a>
+
+      <a href="#">Terms & Conditions</a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+    <!-- ==========================================
+         JAVASCRIPT
+    =========================================== -->
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

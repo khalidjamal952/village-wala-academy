@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Verify Certificate - Village Wala Academy</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/responsive.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/certificate.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a
+                href="../index.html"
+                class="logo"
+            >
+                Village Wala Academy
+            </a>
+
+            <nav
+                class="nav-links"
+                id="navLinks"
+            >
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="live-classes.html">
+                    Live Classes
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="my-courses.html">
+                    My Courses
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a
+                    href="cart.html"
+                    class="cart-btn"
+                >
+                    🛒 Cart
+                    <span id="cartCount">0</span>
+                </a>
+
+                <button
+                    id="menuBtn"
+                    class="menu-btn"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         VERIFICATION HERO
+    ========================================== -->
+
+    <section class="certificate-hero">
+
+        <div class="container">
+
+            <h1>
+                Certificate Verification
+            </h1>
+
+            <p>
+                Verify the authenticity of a Village Wala Academy certificate.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         VERIFICATION SECTION
+    ========================================== -->
+
+    <main class="certificate-page">
+
+        <div class="container">
+
+            <section class="certificate-section">
+
+                <div class="section-heading">
+
+                    <h2>
+                        Verify Certificate
+                    </h2>
+
+                    <p>
+                        Enter the Certificate ID to verify the certificate.
+                    </p>
+
+                </div>
+
+
+                <div class="certificate-verification-box">
+
+                    <div class="verification-icon">
+                        🎓
+                    </div>
+
+                    <h3>
+                        Enter Certificate ID
+                    </h3>
+
+                    <p>
+                        Example: VWA-COURSE2-113809
+                    </p>
+
+                    <div class="verification-form">
+
+                        <input
+                            type="text"
+                            id="certificateSearch"
+                            placeholder="Enter Certificate ID"
+                        >
+
+                        <button
+                            type="button"
+                            id="verifyCertificateBtn"
+                            class="view-certificate-btn"
+                        >
+                            Verify Certificate
+                        </button>
+
+                    </div>
+
+                    <div
+                        id="verificationResult"
+                        class="verification-result"
+                    >
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-about">
+
+                <h3>
+                    Village Wala Academy
+                </h3>
+
+                <p>
+                    Learn practical skills and build your future
+                    with quality online courses.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="my-courses.html">
+                    My Courses
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    Student
+                </h4>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+                <a href="certificate.html">
+                    Certificates
+                </a>
+
+                <a href="verify-certificate.html">
+                    Verify Certificate
+                </a>
+
+                <a href="live-classes.html">
+                    Live Classes
+                </a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h4>
+                    Contact
+                </h4>
+
+                <p>
+                    📧 support@villagewalaacademy.com
+                </p>
+
+                <p>
+                    📍 India
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                ©
+                <span id="currentYear"></span>
+                Village Wala Academy.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="../js/main.js"></script>
+    <script src="../js/VerifyCertificates.js"></script>
+
+</body>
+
+</html> 

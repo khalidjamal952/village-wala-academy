@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courses | Village Wala Academy</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <!-- Courses CSS -->
+    <link rel="stylesheet" href="../css/courses.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+                Village Wala Academy
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+
+                <a href="../index.html">Home</a>
+
+                <a href="courses.html" class="active">
+                    Courses
+                </a>
+
+                <a href="live-classes.html">
+                    Live Classes
+                </a>
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <a href="cart.html" class="cart-btn">
+                    🛒 Cart
+                    <span id="cartCount">0</span>
+                </a>
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="register.html" class="register-btn">
+                    Register
+                </a>
+
+                <button
+                    class="menu-btn"
+                    id="menuBtn">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         COURSES HERO
+    ========================================== -->
+
+    <section class="courses-hero">
+
+        <div class="container">
+
+            <span class="section-badge">
+                Learn & Grow
+            </span>
+
+            <h1>
+                Explore Our Courses
+            </h1>
+
+            <p>
+                Learn practical skills from beginner to
+                advanced level and build your career.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         COURSE SECTION
+    ========================================== -->
+
+    <section class="courses-section">
+
+        <div class="container">
+
+            <!-- Search and Filter -->
+
+            <div class="course-tools">
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="courseSearch"
+                        placeholder="Search courses..."
+                    >
+
+                    <span>🔍</span>
+
+                </div>
+
+
+                <div class="category-filter">
+
+                    <button
+                        class="filter-btn active"
+                        data-category="all">
+                        All
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-category="web">
+                        Web Development
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-category="javascript">
+                        JavaScript
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-category="react">
+                        React
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-category="design">
+                        Design
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Course Grid -->
+
+            <div class="courses-grid" id="coursesGrid">
+
+
+                <!-- COURSE 1 -->
+
+                <div
+                    class="course-card"
+                    data-category="web"
+                    data-title="HTML CSS Complete Course">
+
+                    <div class="course-image">
+
+                        <div class="course-placeholder">
+                            HTML & CSS
+                        </div>
+
+                        <span class="course-level">
+                            Beginner
+                        </span>
+
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Web Development
+                        </span>
+
+                        <h3>
+                            HTML & CSS Complete Course
+                        </h3>
+
+                        <p class="instructor">
+                            By Village Wala Academy
+                        </p>
+
+                        <div class="course-rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>4.9 (120)</span>
+                        </div>
+
+                        <div class="course-info">
+                            <span>📚 25 Lessons</span>
+                            <span>⏱ 8 Hours</span>
+                        </div>
+
+                        <div class="course-price">
+
+                            <strong>₹499</strong>
+
+                            <del>₹999</del>
+
+                        </div>
+
+                        <div class="course-buttons">
+
+                            <button
+                                class="add-cart-btn"
+                                data-id="course1">
+
+                                Add to Cart
+
+                            </button>
+
+                            <a
+                                href="course-details.html?id=course1"
+                                class="details-btn">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COURSE 2 -->
+
+                <div
+                    class="course-card"
+                    data-category="javascript"
+                    data-title="JavaScript Complete Course">
+
+                    <div class="course-image">
+
+                        <div class="course-placeholder">
+                            JavaScript
+                        </div>
+
+                        <span class="course-level">
+                            Intermediate
+                        </span>
+
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            JavaScript
+                        </span>
+
+                        <h3>
+                            JavaScript Complete Course
+                        </h3>
+
+                        <p class="instructor">
+                            By Village Wala Academy
+                        </p>
+
+                        <div class="course-rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>4.8 (95)</span>
+                        </div>
+
+                        <div class="course-info">
+                            <span>📚 35 Lessons</span>
+                            <span>⏱ 12 Hours</span>
+                        </div>
+
+                        <div class="course-price">
+
+                            <strong>₹699</strong>
+
+                            <del>₹1,499</del>
+
+                        </div>
+
+                        <div class="course-buttons">
+
+                            <button
+                                class="add-cart-btn"
+                                data-id="course2">
+
+                                Add to Cart
+
+                            </button>
+
+                            <a
+                                href="course-details.html?id=course2"
+                                class="details-btn">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COURSE 3 -->
+
+                <div
+                    class="course-card"
+                    data-category="react"
+                    data-title="React JS Complete Course">
+
+                    <div class="course-image">
+
+                        <div class="course-placeholder">
+                            React JS
+                        </div>
+
+                        <span class="course-level">
+                            Advanced
+                        </span>
+
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            React JS
+                        </span>
+
+                        <h3>
+                            React JS Complete Course
+                        </h3>
+
+                        <p class="instructor">
+                            By Village Wala Academy
+                        </p>
+
+                        <div class="course-rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>4.9 (85)</span>
+                        </div>
+
+                        <div class="course-info">
+                            <span>📚 40 Lessons</span>
+                            <span>⏱ 15 Hours</span>
+                        </div>
+
+                        <div class="course-price">
+
+                            <strong>₹999</strong>
+
+                            <del>₹1,999</del>
+
+                        </div>
+
+                        <div class="course-buttons">
+
+                            <button
+                                class="add-cart-btn"
+                                data-id="course3">
+
+                                Add to Cart
+
+                            </button>
+
+                            <a
+                                href="course-details.html?id=course3"
+                                class="details-btn">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COURSE 4 -->
+
+                <div
+                    class="course-card"
+                    data-category="design"
+                    data-title="Figma UI UX Design">
+
+                    <div class="course-image">
+
+                        <div class="course-placeholder">
+                            Figma UI/UX
+                        </div>
+
+                        <span class="course-level">
+                            Beginner
+                        </span>
+
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            UI/UX Design
+                        </span>
+
+                        <h3>
+                            Figma UI/UX Design Course
+                        </h3>
+
+                        <p class="instructor">
+                            By Village Wala Academy
+                        </p>
+
+                        <div class="course-rating">
+                            ⭐⭐⭐⭐⭐
+                            <span>4.7 (65)</span>
+                        </div>
+
+                        <div class="course-info">
+                            <span>📚 20 Lessons</span>
+                            <span>⏱ 7 Hours</span>
+                        </div>
+
+                        <div class="course-price">
+
+                            <strong>₹599</strong>
+
+                            <del>₹1,199</del>
+
+                        </div>
+
+                        <div class="course-buttons">
+
+                            <button
+                                class="add-cart-btn"
+                                data-id="course4">
+
+                                Add to Cart
+
+                            </button>
+
+                            <a
+                                href="course-details.html?id=course4"
+                                class="details-btn">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- No Result Message -->
+
+            <div
+                class="no-results"
+                id="noResults">
+
+                <h3>No courses found</h3>
+
+                <p>
+                    Try searching with a different keyword.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+
+                <h3>
+                    Village Wala Academy
+                </h3>
+
+                <p>
+                    Learn practical skills and build
+                    your future with quality online courses.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="live-classes.html">
+                    Live Classes
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Account</h4>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="currentYear"></span>
+                Village Wala Academy.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="../js/main.js"></script>
+    <script src="../js/courses.js"></script>
+
+</body>
+
+</html>

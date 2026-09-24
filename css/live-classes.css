@@ -1,0 +1,533 @@
+/* =========================================
+   LIVE CLASSES PAGE
+========================================= */
+
+.live-classes-page {
+  padding: 60px 20px;
+  background: #f7f8fc;
+  min-height: 700px;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.live-hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #fff1f2, #fef2f2);
+}
+
+.live-hero h1 {
+  font-size: 42px;
+  margin: 15px 0 12px;
+}
+
+.live-hero p {
+  max-width: 650px;
+  margin: auto;
+  color: #666;
+  font-size: 17px;
+}
+
+/* =========================================
+   LIVE BADGE
+========================================= */
+
+.live-badge {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #fee2e2;
+  color: #dc2626;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* =========================================
+   SECTION
+========================================= */
+
+.live-section {
+  margin-bottom: 70px;
+}
+
+.live-section:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.live-section .section-heading {
+  margin-bottom: 30px;
+}
+
+.live-section .section-heading h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.live-section .section-heading p {
+  color: #666;
+}
+
+/* =========================================
+   GRIDS
+========================================= */
+
+.live-now-grid,
+.upcoming-classes-grid,
+.past-classes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* =========================================
+   LIVE CARD
+========================================= */
+
+.live-class-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.live-class-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.live-card-top {
+  min-height: 150px;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+
+  color: #ffffff;
+}
+
+.live-card-top.live {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+.live-card-top h3 {
+  font-size: 21px;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+/* =========================================
+   STATUS BADGE
+========================================= */
+
+.live-status {
+  display: inline-block;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.upcoming-status {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+/* =========================================
+   CARD BODY
+========================================= */
+
+.live-card-body {
+  padding: 22px;
+}
+
+.live-card-body h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.live-card-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* =========================================
+   CLASS META
+========================================= */
+
+.live-class-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.live-class-meta span {
+  color: #555;
+  font-size: 14px;
+}
+
+/* =========================================
+   INSTRUCTOR
+========================================= */
+
+.live-instructor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #eeeeee;
+  margin-bottom: 18px;
+}
+
+.instructor-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  font-weight: 700;
+}
+
+.instructor-info strong {
+  display: block;
+  font-size: 14px;
+}
+
+.instructor-info span {
+  color: #777;
+  font-size: 12px;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.join-live-btn,
+.reminder-btn,
+.watch-recording-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  padding: 12px 15px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.join-live-btn {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+.join-live-btn:hover {
+  background: #b91c1c;
+}
+
+.reminder-btn {
+  background: #4f46e5;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.reminder-btn:hover {
+  background: #3730a3;
+}
+
+.reminder-btn.reminder-set {
+  background: #16a34a;
+}
+
+.watch-recording-btn {
+  background: #111827;
+  color: #ffffff;
+}
+
+.watch-recording-btn:hover {
+  background: #000000;
+}
+
+/* =========================================
+   EMPTY MESSAGE
+========================================= */
+
+.live-empty {
+  grid-column: 1 / -1;
+
+  text-align: center;
+
+  padding: 45px 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 12px;
+
+  color: #666;
+}
+
+.live-empty-icon {
+  font-size: 45px;
+  margin-bottom: 12px;
+}
+
+/* =========================================
+   LIVE PULSE
+========================================= */
+
+.live-pulse {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.live-pulse::before {
+  content: "";
+
+  width: 8px;
+  height: 8px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+
+  animation: livePulse 1.2s infinite;
+}
+
+@keyframes livePulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.3;
+    transform: scale(1.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .live-now-grid,
+  .upcoming-classes-grid,
+  .past-classes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+  .live-hero {
+    padding: 60px 20px;
+  }
+
+  .live-hero h1 {
+    font-size: 32px;
+  }
+
+  .live-classes-page {
+    padding: 45px 15px;
+  }
+
+  .live-now-grid,
+  .upcoming-classes-grid,
+  .past-classes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .live-section .section-heading h2 {
+    font-size: 25px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+  .live-hero h1 {
+    font-size: 28px;
+  }
+
+  .live-card-body {
+    padding: 18px;
+  }
+}
+
+
+/* ==========================================
+   STUDENT LIVE CLASS CARDS
+========================================== */
+
+.live-class-card {
+    background: #ffffff;
+    color: #1f2937;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.live-class-card h3 {
+    color: #111827;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.live-class-card p {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.live-card-content {
+    color: #1f2937;
+}
+
+.live-card-info {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.live-info-item {
+    color: #374151;
+    font-size: 14px;
+}
+
+.live-card-action {
+    margin-top: 20px;
+}
+
+.live-reminder-btn,
+.live-join-btn,
+.live-recording-btn {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   LIVE CLASSES FOOTER
+========================================== */
+
+.footer {
+    background: #111827;
+    color: #ffffff;
+    margin-top: 80px;
+    padding-top: 60px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.3fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.footer-about h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-about p {
+    color: #cbd5e1;
+    line-height: 1.7;
+    max-width: 420px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 17px;
+    margin-bottom: 18px;
+    color: #ffffff;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.footer-links a:hover {
+    color: #6366f1;
+    padding-left: 4px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact p {
+    color: #cbd5e1;
+    margin: 7px 0;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #374151;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #94a3b8;
+    margin: 0;
+    font-size: 14px;
+}

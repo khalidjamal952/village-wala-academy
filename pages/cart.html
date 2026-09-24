@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shopping Cart | Village Wala Academy</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <!-- Cart CSS -->
+    <link rel="stylesheet" href="../css/cart.css" />
+  </head>
+
+  <body>
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo"> Village Wala Academy </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="../index.html"> Home </a>
+
+          <a href="courses.html"> Courses </a>
+
+          <a href="live-classes.html"> Live Classes </a>
+
+          <a href="#"> About </a>
+
+          <a href="#"> Contact </a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn">
+            🛒 Cart
+
+            <span id="cartCount"> 0 </span>
+          </a>
+
+          <a href="login.html" class="login-btn"> Login </a>
+
+          <a href="register.html" class="register-btn"> Register </a>
+
+          <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================
+         CART HERO
+    ========================================== -->
+
+    <section class="cart-hero">
+      <div class="container">
+        <span class="section-badge"> Shopping Cart </span>
+
+        <h1>Your Cart</h1>
+
+        <p>Review your selected courses before checkout.</p>
+      </div>
+    </section>
+
+    <!-- =========================================
+         CART SECTION
+    ========================================== -->
+
+    <section class="cart-section">
+      <div class="container">
+        <!-- EMPTY CART -->
+
+        <div class="empty-cart" id="emptyCart">
+          <div class="empty-cart-icon">🛒</div>
+
+          <h2>Your cart is empty</h2>
+
+          <p>You haven't added any courses yet.</p>
+
+          <a href="courses.html" class="browse-courses-btn"> Browse Courses </a>
+        </div>
+
+        <!-- CART CONTENT -->
+
+        <div class="cart-layout" id="cartLayout">
+          <!-- =================================
+                     CART ITEMS
+                ================================== -->
+
+          <div class="cart-items-section">
+            <div class="cart-header">
+              <h2>Selected Courses</h2>
+
+              <span id="cartItemCount"> 0 courses </span>
+            </div>
+
+            <div id="cartItems" class="cart-items"></div>
+
+            <!-- CONTINUE SHOPPING -->
+
+            <a href="courses.html" class="continue-shopping">
+              ← Continue Shopping
+            </a>
+          </div>
+
+          <!-- =================================
+                     CART SUMMARY
+                ================================== -->
+
+          <aside class="cart-summary">
+            <h2>Order Summary</h2>
+
+            <div class="summary-row">
+              <span> Subtotal </span>
+
+              <strong id="subtotal"> ₹0 </strong>
+            </div>
+
+            <div class="summary-row">
+              <span> Discount </span>
+
+              <strong class="discount" id="discount"> -₹0 </strong>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div class="summary-total">
+              <span> Total </span>
+
+              <strong id="total"> ₹0 </strong>
+            </div>
+
+            <a href="checkout.html" class="checkout-btn" id="checkoutBtn">
+              Proceed to Checkout
+            </a>
+
+            <p class="secure-checkout">🔒 Secure Checkout</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <h3>Village Wala Academy</h3>
+
+          <p>
+            Learn practical skills and build your future with quality online
+            courses.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+
+          <a href="../index.html"> Home </a>
+
+          <a href="courses.html"> Courses </a>
+
+          <a href="live-classes.html"> Live Classes </a>
+        </div>
+
+        <div class="footer-links">
+          <h4>Account</h4>
+
+          <a href="login.html"> Login </a>
+
+          <a href="register.html"> Register </a>
+
+          <a href="dashboard.html"> Dashboard </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          ©
+          <span id="currentYear"></span>
+
+          Village Wala Academy. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/cart.js"></script>
+  </body>
+</html>

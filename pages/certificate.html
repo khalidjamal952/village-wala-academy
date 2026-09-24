@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Certificates - Village Wala Academy</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <link rel="stylesheet" href="../css/certificate.css" />
+  </head>
+
+  <body>
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo"> Village Wala Academy </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="../index.html"> Home </a>
+
+          <a href="courses.html"> Courses </a>
+
+          <a href="live-classes.html"> Live Classes </a>
+
+          <a href="dashboard.html"> Dashboard </a>
+
+          <a href="my-courses.html"> My Courses </a>
+
+          <a href="profile.html"> Profile </a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn">
+            🛒 Cart
+
+            <span id="cartCount"> 0 </span>
+          </a>
+
+          <button id="menuBtn" class="menu-btn">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================
+         CERTIFICATE HERO
+    ========================================== -->
+
+    <section class="certificate-hero">
+      <div class="container">
+        <h1>My Certificates</h1>
+
+        <p>Celebrate your learning achievements and showcase your skills.</p>
+      </div>
+    </section>
+
+    <!-- =========================================
+         CERTIFICATE PAGE
+    ========================================== -->
+
+    <main class="certificate-page">
+      <div class="container">
+        <!-- =====================================
+                 CERTIFICATE LIST
+            ====================================== -->
+
+        <section class="certificate-section">
+          <div class="section-heading">
+            <h2>Your Achievements</h2>
+
+            <p>Certificates for completed courses.</p>
+          </div>
+
+          <div class="certificate-grid" id="certificateGrid">
+            <!-- Certificates loaded by JS -->
+          </div>
+
+          <!-- EMPTY STATE -->
+
+          <div class="certificate-empty" id="certificateEmpty">
+            <div class="certificate-empty-icon">🏆</div>
+
+            <h3>No certificates yet</h3>
+
+            <p>Complete a course to earn your certificate.</p>
+
+            <a href="my-courses.html" class="certificate-course-btn">
+              Go to My Courses
+            </a>
+          </div>
+        </section>
+
+        <!-- =====================================
+                 CERTIFICATE VIEWER
+            ====================================== -->
+
+        <section class="certificate-viewer" id="certificateViewer">
+          <div class="viewer-header">
+            <h2>Certificate Preview</h2>
+
+            <button id="closeCertificate" class="close-certificate-btn">
+              ✕
+            </button>
+          </div>
+
+          <!-- CERTIFICATE -->
+
+          <div class="certificate" id="certificate">
+            <div class="certificate-border">
+              <div class="certificate-content">
+                <div class="certificate-logo">Village Wala Academy</div>
+
+                <p class="certificate-label">CERTIFICATE OF COMPLETION</p>
+
+                <p class="certificate-presented">
+                  This certificate is proudly presented to
+                </p>
+
+                <h1 id="certificateStudentName">Student Name</h1>
+
+                <p class="certificate-text">
+                  for successfully completing the course
+                </p>
+
+                <h2 id="certificateCourseName">Course Name</h2>
+
+                <p class="certificate-date" id="certificateDate">Date</p>
+
+                <div class="certificate-signatures">
+                  <div>
+                    <div class="signature-line"></div>
+
+                    <strong> Instructor </strong>
+                  </div>
+
+                  <div>
+                    <div class="signature-line"></div>
+
+                    <strong> Village Wala Academy </strong>
+                  </div>
+                </div>
+
+                <div class="certificate-id" id="certificateId">
+                  Certificate ID: VWA-000000
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIEWER ACTIONS -->
+
+          <div class="certificate-actions">
+            <button id="printCertificate" class="print-certificate-btn">
+              🖨 Print Certificate
+            </button>
+
+            <button id="downloadCertificate" class="download-certificate-btn">
+              ⬇ Download
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-about">
+          <h3>Village Wala Academy</h3>
+
+          <p>
+            Learn practical skills and build your future with quality online
+            courses.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+
+          <a href="../index.html"> Home </a>
+
+          <a href="courses.html"> Courses </a>
+
+          <a href="dashboard.html"> Dashboard </a>
+
+          <a href="my-courses.html"> My Courses </a>
+        </div>
+
+        <div class="footer-links">
+          <h4>Student</h4>
+
+          <a href="profile.html"> Profile </a>
+
+          <a href="certificate.html"> Certificates </a>
+
+          <a href="live-classes.html"> Live Classes </a>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+
+          <p>📧 support@villagewalaacademy.com</p>
+
+          <p>📍 India</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          ©
+          <span id="currentYear"></span>
+          Village Wala Academy. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="../js/main.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="../js/certificate.js"></script>
+  </body>
+</html>

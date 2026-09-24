@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Checkout | Village Wala Academy</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <!-- Checkout CSS -->
+    <link rel="stylesheet" href="../css/checkout.css" />
+  </head>
+
+  <body>
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo"> Village Wala Academy </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="../index.html"> Home </a>
+
+          <a href="courses.html"> Courses </a>
+
+          <a href="live-classes.html"> Live Classes </a>
+
+          <a href="#"> About </a>
+
+          <a href="#"> Contact </a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn">
+            🛒 Cart
+
+            <span id="cartCount"> 0 </span>
+          </a>
+
+          <a href="login.html" class="login-btn"> Login </a>
+
+          <a href="register.html" class="register-btn"> Register </a>
+
+          <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================
+         CHECKOUT HERO
+    ========================================== -->
+
+    <section class="checkout-hero">
+      <div class="container">
+        <span class="section-badge"> Secure Checkout </span>
+
+        <h1>Complete Your Purchase</h1>
+
+        <p>Enter your details and complete your course purchase.</p>
+      </div>
+    </section>
+
+    <!-- =========================================
+         CHECKOUT SECTION
+    ========================================== -->
+
+    <section class="checkout-section">
+      <div class="container">
+        <div class="checkout-layout">
+          <!-- =================================
+                     CUSTOMER INFORMATION
+                ================================== -->
+
+          <div class="checkout-form-box">
+            <h2>Customer Information</h2>
+
+            <p class="form-description">
+              Enter your information for your course account.
+            </p>
+
+            <form id="checkoutForm">
+              <!-- FULL NAME -->
+
+              <div class="form-group">
+                <label for="fullName"> Full Name </label>
+
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
+              <!-- EMAIL -->
+
+              <div class="form-group">
+                <label for="email"> Email Address </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <!-- PHONE -->
+
+              <div class="form-group">
+                <label for="phone"> Phone Number </label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+
+              <!-- PAYMENT METHOD -->
+
+              <div class="payment-section">
+                <h3>Payment Method</h3>
+
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="online" checked />
+
+                  <span> 💳 Online Payment </span>
+                </label>
+
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="upi" />
+
+                  <span> 📱 UPI </span>
+                </label>
+
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="card" />
+
+                  <span> 💳 Credit / Debit Card </span>
+                </label>
+              </div>
+
+              <!-- TERMS -->
+
+              <label class="terms-checkbox">
+                <input type="checkbox" id="terms" required />
+
+                <span> I agree to the terms and conditions. </span>
+              </label>
+
+              <!-- PLACE ORDER -->
+
+              <button type="submit" class="place-order-btn">Place Order</button>
+
+              <p class="secure-payment">
+                🔒 Your information is protected with secure checkout.
+              </p>
+            </form>
+          </div>
+
+          <!-- =================================
+                     ORDER SUMMARY
+                ================================== -->
+
+          <aside class="checkout-summary">
+            <h2>Order Summary</h2>
+
+            <!-- COURSE ITEMS -->
+
+            <div id="checkoutItems" class="checkout-items"></div>
+
+            <!-- SUBTOTAL -->
+
+            <div class="summary-row">
+              <span> Subtotal </span>
+
+              <strong id="checkoutSubtotal"> ₹0 </strong>
+            </div>
+
+            <!-- DISCOUNT -->
+
+            <div class="summary-row">
+              <span> Discount </span>
+
+              <strong id="checkoutDiscount" class="discount"> -₹0 </strong>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <!-- TOTAL -->
+
+            <div class="checkout-total">
+              <span> Total </span>
+
+              <strong id="checkoutTotal"> ₹0 </strong>
+            </div>
+
+            <div class="checkout-guarantee">
+              <div>🔒 Secure Payment</div>
+
+              <div>♾️ Lifetime Course Access</div>
+
+              <div>📄 Course Certificate</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <h3>Village Wala Academy</h3>
+
+          <p>
+            Learn practical skills and build your future with quality online
+            courses.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+
+          <a href="../index.html"> Home </a>
+
+          <a href="courses.html"> Courses </a>
+
+          <a href="live-classes.html"> Live Classes </a>
+        </div>
+
+        <div class="footer-links">
+          <h4>Account</h4>
+
+          <a href="login.html"> Login </a>
+
+          <a href="register.html"> Register </a>
+
+          <a href="dashboard.html"> Dashboard </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          ©
+          <span id="currentYear"></span>
+
+          Village Wala Academy. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/checkout.js"></script>
+  </body>
+</html>

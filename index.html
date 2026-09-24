@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Village Wala Academy - Learn practical skills through online courses and live classes."
+    />
+
+    <title>Village Wala Academy | Learn. Grow. Succeed.</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- =====================================
+         NAVBAR
+    ====================================== -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <!-- Logo -->
+
+        <a href="index.html" class="logo"> Village<span>Wala</span> Academy </a>
+
+        <!-- Navigation -->
+
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html"> Home </a>
+
+          <a href="pages/courses.html"> Courses </a>
+
+          <a href="pages/live-classes.html"> Live Classes </a>
+
+          <a href="#about"> About </a>
+
+          <a href="#contact"> Contact </a>
+        </nav>
+
+        <!-- Right Side -->
+
+        <div class="nav-actions">
+          <a href="pages/cart.html" class="cart-btn">
+            🛒
+
+            <span id="cartCount"> 0 </span>
+          </a>
+
+          <a href="pages/login.html" class="login-btn"> Login </a>
+
+          <a href="pages/register.html" class="signup-btn"> Register </a>
+        </div>
+
+        <!-- Mobile Menu -->
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+      </div>
+    </header>
+
+    <!-- =====================================
+         HERO SECTION
+    ====================================== -->
+
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <!-- Hero Content -->
+
+          <div class="hero-content">
+            <span class="hero-badge"> 🚀 Learn From Anywhere </span>
+
+            <h1>
+              Learn Skills.
+
+              <span> Build Your Future. </span>
+            </h1>
+
+            <p>
+              Learn practical skills from expert instructors, attend live
+              classes and build your career with industry-focused courses.
+            </p>
+
+            <!-- Buttons -->
+
+            <div class="hero-buttons">
+              <a href="pages/courses.html" class="btn primary-btn">
+                Explore Courses
+              </a>
+
+              <a href="pages/live-classes.html" class="btn secondary-btn">
+                🔴 Live Classes
+              </a>
+            </div>
+
+            <!-- Statistics -->
+
+            <div class="hero-stats">
+              <div>
+                <strong> 10K+ </strong>
+
+                <span> Students </span>
+              </div>
+
+              <div>
+                <strong> 100+ </strong>
+
+                <span> Courses </span>
+              </div>
+
+              <div>
+                <strong> 20+ </strong>
+
+                <span> Instructors </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual -->
+
+          <div class="hero-visual">
+            <div class="learning-card">
+              <div class="video-placeholder">▶</div>
+
+              <h3>Full Stack Web Development</h3>
+
+              <p>Learn HTML, CSS, JavaScript, React and Node.js.</p>
+
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+
+              <div class="progress-text">
+                <span> Course Progress </span>
+
+                <strong> 75% </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+             CATEGORIES
+        ====================================== -->
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <span> EXPLORE </span>
+
+            <h2>Popular Categories</h2>
+
+            <p>Choose the skill you want to learn.</p>
+          </div>
+
+          <div class="categories">
+            <div class="category">
+              <div class="category-icon">💻</div>
+
+              <h3>Web Development</h3>
+
+              <p>25 Courses</p>
+            </div>
+
+            <div class="category">
+              <div class="category-icon">📱</div>
+
+              <h3>App Development</h3>
+
+              <p>15 Courses</p>
+            </div>
+
+            <div class="category">
+              <div class="category-icon">🎨</div>
+
+              <h3>UI/UX Design</h3>
+
+              <p>12 Courses</p>
+            </div>
+
+            <div class="category">
+              <div class="category-icon">📊</div>
+
+              <h3>Data Science</h3>
+
+              <p>18 Courses</p>
+            </div>
+
+            <div class="category">
+              <div class="category-icon">⚛️</div>
+
+              <h3>Programming</h3>
+
+              <p>20 Courses</p>
+            </div>
+
+            <div class="category">
+              <div class="category-icon">📈</div>
+
+              <h3>Digital Marketing</h3>
+
+              <p>10 Courses</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+             POPULAR COURSES
+        ====================================== -->
+
+      <section class="section courses-section" id="courses">
+        <div class="container">
+          <div class="section-title">
+            <span> TOP COURSES </span>
+
+            <h2>Popular Courses</h2>
+
+            <p>Start learning from our most popular courses.</p>
+          </div>
+
+          <div class="course-grid">
+            <!-- Course 1 -->
+
+            <article class="course-card">
+              <div class="course-image">
+                <span> HTML & CSS </span>
+
+                <div class="course-tag">Bestseller</div>
+              </div>
+
+              <div class="course-body">
+                <small> Web Development </small>
+
+                <h3>Complete HTML & CSS Course</h3>
+
+                <p>Learn HTML and CSS from beginner to advanced level.</p>
+
+                <div class="rating">
+                  ⭐ 4.8
+
+                  <span> (2,500 Students) </span>
+                </div>
+
+                <div class="course-footer">
+                  <strong> ₹499 </strong>
+
+                  <button class="add-cart" data-id="course1">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Course 2 -->
+
+            <article class="course-card">
+              <div class="course-image javascript">
+                <span> JavaScript </span>
+              </div>
+
+              <div class="course-body">
+                <small> Programming </small>
+
+                <h3>Modern JavaScript Course</h3>
+
+                <p>Learn JavaScript with practical projects.</p>
+
+                <div class="rating">
+                  ⭐ 4.9
+
+                  <span> (3,100 Students) </span>
+                </div>
+
+                <div class="course-footer">
+                  <strong> ₹699 </strong>
+
+                  <button class="add-cart" data-id="course2">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Course 3 -->
+
+            <article class="course-card">
+              <div class="course-image react">
+                <span> React JS </span>
+              </div>
+
+              <div class="course-body">
+                <small> Frontend Development </small>
+
+                <h3>React JS Complete Course</h3>
+
+                <p>Build modern websites using React JS.</p>
+
+                <div class="rating">
+                  ⭐ 4.9
+
+                  <span> (4,200 Students) </span>
+                </div>
+
+                <div class="course-footer">
+                  <strong> ₹999 </strong>
+
+                  <button class="add-cart" data-id="course3">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="center">
+            <a href="pages/courses.html" class="btn primary-btn">
+              View All Courses
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+             LIVE CLASSES
+        ====================================== -->
+
+      <section class="live-section">
+        <div class="container live-container">
+          <div>
+            <span class="live-badge"> 🔴 LIVE CLASSES </span>
+
+            <h2>Learn Live With Expert Instructors</h2>
+
+            <p>
+              Attend live interactive classes, ask questions and learn directly
+              from experienced instructors.
+            </p>
+
+            <a href="pages/live-classes.html" class="btn primary-btn">
+              View Live Classes
+            </a>
+          </div>
+
+          <div class="live-card">
+            <div class="live-screen">
+              <span> 🔴 LIVE </span>
+
+              <h3>Full Stack Development</h3>
+
+              <p>Live class starting soon</p>
+            </div>
+
+            <div class="live-info">
+              <strong> Today • 7:00 PM </strong>
+
+              <button>Join Class</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+             FEATURES
+        ====================================== -->
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <span> WHY CHOOSE US </span>
+
+            <h2>Everything You Need To Learn</h2>
+          </div>
+
+          <div class="features">
+            <div class="feature">
+              <div>🎥</div>
+
+              <h3>Video Courses</h3>
+
+              <p>Learn anytime with recorded video lectures.</p>
+            </div>
+
+            <div class="feature">
+              <div>🔴</div>
+
+              <h3>Live Classes</h3>
+
+              <p>Attend interactive live lectures with instructors.</p>
+            </div>
+
+            <div class="feature">
+              <div>📱</div>
+
+              <h3>Learn Anywhere</h3>
+
+              <p>Access your courses from any device.</p>
+            </div>
+
+            <div class="feature">
+              <div>🏆</div>
+
+              <h3>Certificates</h3>
+
+              <p>Get certificates after completing courses.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================
+             CTA
+        ====================================== -->
+
+      <section class="cta">
+        <div class="container">
+          <h2>Start Learning Today</h2>
+
+          <p>Join thousands of students and start building your future.</p>
+
+          <a href="pages/register.html" class="btn white-btn">
+            Create Free Account
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="footer" id="contact">
+      <div class="container footer-grid">
+        <!-- About -->
+
+        <div>
+          <a href="index.html" class="logo">
+            Village<span>Wala</span> Academy
+          </a>
+
+          <p>
+            Learn practical skills, build your career and achieve your goals.
+          </p>
+        </div>
+
+        <!-- Platform -->
+
+        <div>
+          <h3>Platform</h3>
+
+          <a href="pages/courses.html"> Courses </a>
+
+          <a href="pages/live-classes.html"> Live Classes </a>
+
+          <a href="pages/certificate.html"> Certificates </a>
+
+          <a href="#"> Become Instructor </a>
+        </div>
+
+        <!-- Company -->
+
+        <div id="about">
+          <h3>Company</h3>
+
+          <a href="#about"> About Us </a>
+
+          <a href="#contact"> Contact </a>
+
+          <a href="#"> Privacy Policy </a>
+
+          <a href="#"> Terms & Conditions </a>
+        </div>
+
+        <!-- Contact -->
+
+        <div>
+          <h3>Contact</h3>
+
+          <p>📧 support@villagewala.com</p>
+
+          <p>📞 +91 XXXXX XXXXX</p>
+
+          <p>📍 India</p>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>© 2026 Village Wala Academy. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

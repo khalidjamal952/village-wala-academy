@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Live Classes - Village Wala Academy</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <link rel="stylesheet" href="../css/live-classes.css" />
+  </head>
+
+  <body>
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo"> Village Wala Academy </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="../index.html"> Home </a>
+
+          <a href="courses.html"> Courses </a>
+
+          <a href="live-classes.html" class="active"> Live Classes </a>
+
+          <a href="dashboard.html"> Dashboard </a>
+
+          <a href="my-courses.html"> My Courses </a>
+
+          <a href="profile.html"> Profile </a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-btn">
+            🛒 Cart
+
+            <span id="cartCount"> 0 </span>
+          </a>
+
+          <button id="menuBtn" class="menu-btn">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section class="live-hero">
+      <div class="container">
+        <span class="live-badge"> 🔴 LIVE LEARNING </span>
+
+        <h1>Live Classes</h1>
+
+        <p>
+          Attend live classes, interact with instructors and learn in real time.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================
+         LIVE CLASSES SECTION
+    ========================================== -->
+
+    <main class="live-classes-page">
+      <div class="container">
+        <!-- =====================================
+                 CURRENT LIVE CLASS
+            ====================================== -->
+
+        <section class="live-section">
+          <div class="section-heading">
+            <h2>🔴 Live Now</h2>
+
+            <p>Classes currently happening.</p>
+          </div>
+
+          <div class="live-now-grid" id="liveNowGrid">
+            <!-- Live classes loaded by JS -->
+          </div>
+        </section>
+
+        <!-- =====================================
+                 UPCOMING CLASSES
+            ====================================== -->
+
+        <section class="live-section">
+          <div class="section-heading">
+            <h2>📅 Upcoming Classes</h2>
+
+            <p>Don't miss your next live session.</p>
+          </div>
+
+          <div class="upcoming-classes-grid" id="upcomingClassesGrid">
+            <!-- Upcoming classes loaded by JS -->
+          </div>
+        </section>
+
+        <!-- =====================================
+                 PAST CLASSES
+            ====================================== -->
+
+        <section class="live-section">
+          <div class="section-heading">
+            <h2>▶ Past Classes</h2>
+
+            <p>Watch previous live sessions.</p>
+          </div>
+
+          <div class="past-classes-grid" id="pastClassesGrid">
+            <!-- Past classes loaded by JS -->
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-about">
+          <h3>Village Wala Academy</h3>
+
+          <p>
+            Learn practical skills and build your future with quality online
+            courses.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+
+          <a href="../index.html"> Home </a>
+
+          <a href="courses.html"> Courses </a>
+
+          <a href="live-classes.html"> Live Classes </a>
+
+          <a href="dashboard.html"> Dashboard </a>
+        </div>
+
+        <div class="footer-links">
+          <h4>Student</h4>
+
+          <a href="my-courses.html"> My Courses </a>
+
+          <a href="profile.html"> Profile </a>
+
+          <a href="certificate.html"> Certificates </a>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+
+          <p>📧 support@villagewalaacademy.com</p>
+
+          <p>📍 India</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          ©
+          <span id="currentYear"></span>
+          Village Wala Academy. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="../js/main.js"></script>
+
+    <script src="../js/live-classes.js"></script>
+  </body>
+</html>
